@@ -1,14 +1,26 @@
-vector1 = input("first vector: ")
-vector2 = input("second vector: ")
+def vector_input():
 
-v1 = []
-v2 = []
+    v1 = []
+    v2 = []
 
-for i in vector1:
-    v1.append(int(i))
+    vector1 = input("first vector: ")
+    vector2 = input("second vector: ")
 
-for i in vector2:
-    v2.append(int(i))
+    for i in vector1:
+        v1.append(int(i))
+
+    for i in vector2:
+        v2.append(int(i))
+
+    print("What do you want to do with these vectors?")
+    n = input("choose from sum, dot-product,... ") # the three dots need to be filled in when new features are added
+
+    if n == "sum":
+        vector_sum(v1, v2)
+    elif n == "dot-product":
+        dot_product(v1, v2)
+    else:
+        print("invallid input")
 
 def vector_sum(v1, v2):
     sum_v = []
@@ -20,4 +32,4 @@ def vector_sum(v1, v2):
 def dot_product(v1, v2):
     pass
 
-vector_sum(v1, v2)
+vector_input()
