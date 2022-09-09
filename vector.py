@@ -1,6 +1,3 @@
-from ast import Pass
-
-
 vector1 = input("first vector: ")
 vector2 = input("second vector: ")
 
