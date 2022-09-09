@@ -32,4 +32,7 @@ def vector_sum(v1, v2):
 def dot_product(v1, v2):
     pass
 
+def angle(v1, v2):
+    pass
+
 vector_input()
