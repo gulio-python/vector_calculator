@@ -42,7 +42,8 @@ def dot_product(v1, v2):
 
 def angle(v1, v2):
     cos_angle = dot_product(v1, v2) / (vector_length(v1) * vector_length(v2))
+    angle = math.acos(cos_angle)
 
-    return cos_angle
+    return angle
 
 vector_input()
