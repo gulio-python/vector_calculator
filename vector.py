@@ -11,7 +11,7 @@ def vector_input():
     if n == "sum":
         print(vector_sum(v1, v2))
     elif n == "dot-product":
-        dot_product(v1, v2)
+        print(dot_product(v1, v2))
     elif n == "length":
         print("length of vector 1 = " + str(vector_length(v1)))
         print("this is the sqrt of: " + str(vector_length(v1)**2))
@@ -31,10 +31,14 @@ def vector_length(vector):
     length = math.sqrt(int(vector[0])**2 + int(vector[1])**2 + int(vector[2])**2)
     return length
 
-def angle(v1, v2):
-    pass
-
 def dot_product(v1, v2):
+    products = []
+    for i in range(len(v1)):
+        products.append(int(v1[i]) * int(v2[i]))
+
+    return sum(products)
+
+def angle(v1, v2):
     pass
 
 vector_input()
