@@ -13,8 +13,10 @@ def vector_input():
     elif n == "dot-product":
         dot_product(v1, v2)
     elif n == "length":
-        print(vector_length(v1))
-        print("sqrt of: " + str(vector_length(v1)**2))
+        print("length of vector 1 = " + str(vector_length(v1)))
+        print("this is the sqrt of: " + str(vector_length(v1)**2))
+        print("length of vector 2 = " + str(vector_length(v2)))
+        print("this is the sqrt of: " + str(vector_length(v2)**2))
     else:
         print("invallid input")
 
