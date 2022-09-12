@@ -17,6 +17,8 @@ def vector_input():
         print("this is the sqrt of: " + str(vector_length(v1)**2))
         print("length of vector 2 = " + str(vector_length(v2)))
         print("this is the sqrt of: " + str(vector_length(v2)**2))
+    elif n == "angle":
+        print(angle(v1, v2))
     else:
         print("invallid input")
 
@@ -39,6 +41,8 @@ def dot_product(v1, v2):
     return sum(products)
 
 def angle(v1, v2):
-    pass
+    cos_angle = dot_product(v1, v2) / (vector_length(v1) * vector_length(v2))
+
+    return cos_angle
 
 vector_input()
