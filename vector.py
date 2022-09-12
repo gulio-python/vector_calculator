@@ -1,3 +1,5 @@
+import math
+
 def vector_input():
 
     v1 = []
