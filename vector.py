@@ -1,12 +1,7 @@
 import math
 
-def vector_input():
+def security(v1, v2, n):
 
-    v1 = input("first vector: ")
-    v2 = input("second vector: ")
-
-    print("What do you want to do with these vectors?")
-    n = input("choose from sum, dot-product, length, angle,... ") # the three dots need to be filled in when new features are added
 
     if n == "sum":
         print(vector_sum(v1, v2))
@@ -21,6 +16,16 @@ def vector_input():
         print(angle(v1, v2))
     else:
         print("invallid input")
+
+def vector_input():
+
+    v1 = input("first vector: ")
+    v2 = input("second vector: ")
+
+    print("What do you want to do with these vectors?")
+    n = input("choose from sum, dot-product, length, angle,... ") # the three dots need to be filled in when new features are added
+
+    security(v1, v2, n)
 
 def vector_sum(v1, v2):
     sum_v = []
