@@ -14,10 +14,13 @@ def security(v1, v2, n):
         print("this is the sqrt of: " + str(vector_length(v2)**2))
     elif n == "angle":
         print(angle(v1, v2))
+        print("cosine of the angle = " + str(math.cos(angle(v1, v2))))
     else:
         print("invallid input")
 
 def vector_input():
+
+    print("input the elements of the vectors as numbers separated by a space. e.g: 1 2 3")
 
     v1 = list(map(int, input("elemets of vector1: ").strip().split()))
     v2 = list(map(int, input("elemets of vector2: ").strip().split()))
