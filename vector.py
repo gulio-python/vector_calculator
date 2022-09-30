@@ -1,8 +1,6 @@
 import math
 
-def security(v1, v2, n):
-
-
+def descision(v1, v2, n):
     if n == "sum":
         print(vector_sum(v1, v2))
     elif n == "dot-product":
@@ -28,7 +26,7 @@ def vector_input():
     print("What do you want to do with these vectors?")
     n = input("choose from sum, dot-product, length, angle,... ") # the three dots need to be filled in when new features are added
 
-    security(v1, v2, n)
+    descision(v1, v2, n)
 
 def vector_sum(v1, v2):
     sum_v = []
