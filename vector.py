@@ -26,6 +26,8 @@ def vector_input():
     v1 = list(map(int, input("elemets of vector1: ").strip().split()))
     v2 = list(map(int, input("elemets of vector2: ").strip().split()))
 
+    security(v1, v2)
+
     print("What do you want to do with these vectors?")
     n = input("choose from sum, dot-product, length, angle,... ") # the three dots need to be filled in when new features are added
 
